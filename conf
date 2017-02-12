@@ -24,6 +24,7 @@ Digite o ip !\033[0m"
 read -p ": " ip
 clear
 echo -e "\033[1;31m-----> \033[01;37mScript Edited ColtSeals,N3uRoT1C (NerdologiaVps)\033[0m"
+echo -e "\033[1;31m-----> \033[01;37mCanal: @VpsNerdologia Grupo: @NerdologiaVps \033[0m"
 echo -e "\033[1;31m-----> \033[01;37mSeu sistema operacional:\033[1;31m $(cat /etc/so)"
 echo -e "\033[1;31m-----> \033[01;37mSeu ip:\033[1;31m $ip"
 echo -e "\033[1;31m-----> \033[1;37mSQUID NAS PORTAS:\033[1;31m 80, 8080, 8799, 3128\033[0m"
