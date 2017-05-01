@@ -23,7 +23,7 @@ echo -e "\033[1;31mPara a instalação ser correta é preciso o ip.
 Digite o ip !\033[0m"
 read -p ": " ip
 clear
-echo -e "\033[1;31m-----> \033[01;37mScript Edited ••ColtSeals & N3uRoT1C•• \033[0m"
+echo -e "\033[1;31m-----> \033[01;37mScript Edited ••ColtSeals TecnologY•• \033[0m"
 echo -e "\033[1;32m# O que fazemos nesta vida ecoa na eternidade! NERDOLOGIA•VPS"
 echo -e "\033[1;32m# TELEGRAM GRUPO: @NerdologiaVps"
 echo -e "\033[1;32m# TELEGRAM CANAL: @VpsNerdologia"
