@@ -148,8 +148,5 @@ case "$1" in
 			inst_sqd
 		fi
 		inst_shell
-		;;
-	*)	echo "VocÃª estÃ¡ executando o script errado."
 		exit 4
 		;;
-esac
