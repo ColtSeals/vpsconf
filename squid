@@ -150,6 +150,5 @@ case "$1" in
 		inst_shell
 		exit 4
 		;;
-		
-esac
+		esac
 exit
