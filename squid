@@ -17,12 +17,12 @@ else
 	exit
 	fi
 fi
-AIP=$(wget -qO- ipv4.icanhazip.com)
+ip=$(wget -qO- ipv4.icanhazip.com)
 
 cat -n /etc/issue |grep 1 |cut -d' ' -f6,7,8 |sed 's/1//' |sed 's/	//' > /etc/so 
 echo -e "\033[1;31mPara a instalação ser correta é preciso o ip.
 Digite o ip !\033[0m"
-read -p ": " -e -i $AIP
+read -p ": " -e -i $ip
 clear
 echo -e "\033[1;31m•••••> \033[01;37mScript Edited ••ColtSeals TecnologY•• \033[0m"
 echo -e "\033[1;32m•••••> A Internet aproxima quem está longe e afasta quem está perto!"
@@ -113,6 +113,7 @@ http_port 8799
 http_port 3128
 visible_hostname VpsPack
 acl ip dstdomain $ip
+acl GET method GET
 http_access allow ip" > /etc/squid/squid.conf
 echo 'acl accept dstdomain -i "/etc/payloads"
 http_access allow accept
@@ -149,6 +150,7 @@ http_port 8799
 http_port 3128
 visible_hostname VpsPack
 acl ip dstdomain $ip
+acl GET method GET
 http_access allow ip" > /etc/squid3/squid.conf
 echo 'acl accept dstdomain -i "/etc/payloads"
 http_access allow accept
@@ -183,6 +185,7 @@ http_port 8799
 http_port 3128
 visible_hostname VpsPack
 acl ip dstdomain $ip
+acl GET method GET
 http_access allow ip" > /etc/squid/squid.conf
 echo 'acl accept dstdomain -i "/etc/payloads"
 http_access allow accept
@@ -217,6 +220,7 @@ http_port 8799
 http_port 3128
 visible_hostname VpsPack
 acl ip dstdomain $ip
+acl GET method GET
 http_access allow ip" > /etc/squid3/squid.conf
 echo 'acl accept dstdomain -i "/etc/payloads"
 http_access allow accept
@@ -253,6 +257,7 @@ http_port 8799
 http_port 3128
 visible_hostname VpsPack
 acl ip dstdomain $ip
+acl GET method GET
 http_access allow ip" > /etc/squid/squid.conf
 echo 'acl accept dstdomain -i "/etc/payloads"
 http_access allow accept
@@ -289,6 +294,7 @@ http_port 8799
 http_port 3128
 visible_hostname VpsPack
 acl ip dstdomain $ip
+acl GET method GET
 http_access allow ip" > /etc/squid*/squid.conf
 echo 'acl accept dstdomain -i "/etc/payloads"
 http_access allow accept
