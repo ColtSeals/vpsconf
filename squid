@@ -43,7 +43,7 @@ https://telegram.me/VpsNerdologia"' > /bin/grupoconf
 chmod a+x /bin/grupoconf
 
 function sshd_config(){ echo "Port 22
-#Port 443
+Port 443
 Protocol 2
 KeyRegenerationInterval 3600
 ServerKeyBits 1024
@@ -113,7 +113,6 @@ http_port 8799
 http_port 3128
 visible_hostname VpsPack
 acl ip dstdomain $ip
-acl GET method GET
 http_access allow ip" > /etc/squid/squid.conf
 echo 'acl accept dstdomain -i "/etc/payloads"
 http_access allow accept
@@ -150,7 +149,6 @@ http_port 8799
 http_port 3128
 visible_hostname VpsPack
 acl ip dstdomain $ip
-acl GET method GET
 http_access allow ip" > /etc/squid3/squid.conf
 echo 'acl accept dstdomain -i "/etc/payloads"
 http_access allow accept
@@ -185,7 +183,6 @@ http_port 8799
 http_port 3128
 visible_hostname VpsPack
 acl ip dstdomain $ip
-acl GET method GET
 http_access allow ip" > /etc/squid/squid.conf
 echo 'acl accept dstdomain -i "/etc/payloads"
 http_access allow accept
@@ -220,7 +217,6 @@ http_port 8799
 http_port 3128
 visible_hostname VpsPack
 acl ip dstdomain $ip
-acl GET method GET
 http_access allow ip" > /etc/squid3/squid.conf
 echo 'acl accept dstdomain -i "/etc/payloads"
 http_access allow accept
@@ -257,7 +253,6 @@ http_port 8799
 http_port 3128
 visible_hostname VpsPack
 acl ip dstdomain $ip
-acl GET method GET
 http_access allow ip" > /etc/squid/squid.conf
 echo 'acl accept dstdomain -i "/etc/payloads"
 http_access allow accept
@@ -294,7 +289,6 @@ http_port 8799
 http_port 3128
 visible_hostname VpsPack
 acl ip dstdomain $ip
-acl GET method GET
 http_access allow ip" > /etc/squid*/squid.conf
 echo 'acl accept dstdomain -i "/etc/payloads"
 http_access allow accept
