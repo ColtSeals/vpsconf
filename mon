@@ -160,6 +160,18 @@ http_port 8799
 http_port 3128
 visible_hostname VpsPack
 acl ip dstdomain $ip
+acl REQUEST method CONNECT" >> /etc/squid/squid.conf
+acl REQUEST method GET" >> /etc/squid/squid.conf
+acl REQUEST method POST" >> /etc/squid/squid.conf
+acl REQUEST method PUT" >> /etc/squid/squid.conf
+acl REQUEST method HEAD" >> /etc/squid/squid.conf
+acl REQUEST method TRACE" >> /etc/squid/squid.conf
+acl REQUEST method OPTIONS" >> /etc/squid/squid.conf
+acl REQUEST method PATCH" >> /etc/squid/squid.conf
+acl REQUEST method PROPATCH" >> /etc/squid/squid.conf
+acl REQUEST method DELETE" >> /etc/squid/squid.conf
+http_access allow net" >> /etc/squid3/squid.conf
+http_access allow REQUEST" >> /etc/squid3/squid.conf
 http_access allow ip" > /etc/squid3/squid.conf
 echo 'acl accept dstdomain -i "/etc/payloads"
 http_access allow accept
