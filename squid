@@ -83,30 +83,33 @@ chmod a+x /bin/addhost
 function payloads(){ echo "minhaclaro.claro.com.br
 recargafacil.claro.com.br
 frontend.claro.com.br
-d1n212ccp6ldpw.cloudfront.net
-gitlab.veek.com.br
-veek.com.br
-clients1.google.com
-interatividade.vivo.ddivulga.com/produto
-i.vivo.ddivulga.com/i/gp
-i.vivo-hom.ddivulga.com/i/gp
-sdp.vivo.com.br/
-navegue.vivo.ddivulga.com/pacote
-200.220.254.31
-187.8.166.33
-www.portalrecarga.vivo.com.br/noCredit/vitrine/controle/
-portalrecarga.vivo.com.br/noCredit/vitrine/controle/
-www.portalrecarga.vivo.com.br/dadospos/home/
-portalrecarga.vivo.com.br/recarga/home
-portalrecarga.vivo.com.br/recarga
-www.portalsva2.vivo.com.br/captive-static/tarif-def/pd/index.html
-www.portalsva2.vivo.com.br/captive-static/tarif-def/cd/index.html
 golpf.claro.com.br
 logtiscap.claro.com.br
 www.recargafacil.claro.com.br
-.vivo.com.br
 .bradescocelular.com.br
-.claroseguridad.com" > /etc/payloads
+.claroseguridad.com
+clients1.google.com
+veek.com.br
+gitlab.veek.com.br
+portalrecarga.vivo.com.br/recarga
+portalrecarga.vivo.com.br/recarga/home
+d1n212ccp6ldpw.cloudfront.net
+www.portalrecarga.vivo.com.br/dadospos/home/
+portalrecarga.vivo.com.br/noCredit/vitrine/controle/
+www.portalrecarga.vivo.com.br/noCredit/vitrine/controle/
+187.8.166.33
+200.220.254.31
+navegue.vivo.ddivulga.com/pacote
+sdp.vivo.com.br/
+i.vivo-hom.ddivulga.com/i/gp
+i.vivo.ddivulga.com/i/gp
+interatividade.vivo.ddivulga.com/produto
+www.portalsva2.vivo.com.br/captive-static/tarif-def/pd/index.html
+www.portalsva2.vivo.com.br/captive-static/tarif-def/cd/index.html
+navegue.vivo.com.br/controle/
+navegue.vivo.com.br/pre
+www.navegue.vivo.com.br/controle/
+www.navegue.vivo.com.br/pre" > /etc/payloads
 }
 
 if cat /etc/so |grep -i ubuntu |grep 16 1> /dev/null 2> /dev/null ; then
